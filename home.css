@@ -1,0 +1,635 @@
+/*paragraph fonts */
+.p-font {
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+}
+/*title fonts */
+.h-font {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+/*header font*/
+@font-face {
+  font-family: Redzone;
+  src: url("NFL Redzone.ttf");
+}
+/*header for all pages*/
+#header {
+  background-color: #d6d8db;
+  font-family: 'Redzone';
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+}
+#logo {
+  background-color: #d6d8db;
+}
+#logo img {
+  max-width: 100%;
+}
+#top-row {
+  padding-top: 20px;
+}
+/*about.html*/
+#about-content-area {
+  background-color: #133160;
+  color: white;
+}
+#about-content-area h {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 10px;
+}
+#about-content-area img {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+#about-content-area p {
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+#about-content-area a {
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  border: black solid 2px;
+  padding: 10px;
+  color: black;
+  background-color: #d6d8db;
+}
+/*contact.html*/
+#contact-main-row {
+  background-color: #133160;
+  color: white;
+}
+#contact-main-row label {
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+#contact-main-row img {
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+#contact-main-row h {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 10px;
+}
+/*roster.html*/
+#roster h {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+#roster table {
+  margin-left: 30px;
+  text-align: center;
+  width: 1000px;
+  margin-bottom: 50px;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  border: white solid 2px;
+  background-color: #133160;
+  color: white;
+}
+#roster table tr,
+#roster table th,
+#roster table td {
+  border: white solid 1px;
+}
+#roster table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* main content - home */
+#home-main-row {
+  margin-bottom: 100px;
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  height: 400px;
+  margin-top: 7px;
+}
+#home-main-row img {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  width: 550px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#home-main-row #main-content .display-1 {
+  font-size: 3.5vw;
+  padding-left: 30px;
+  text-align: left;
+  padding-bottom: 25px;
+}
+#home-main-row #main-content a {
+  font-size: 1.4vw;
+  text-align: right;
+  padding-left: 30px;
+  color: white;
+}
+#home-main-row #scores {
+  text-align: center;
+}
+#home-main-row #scores .display-3 {
+  padding-bottom: 5px;
+  padding-top: 30px;
+}
+#home-main-row #scores h2 {
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+#home-main-row #scores p {
+  font-size: 25px;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  line-height: 20px;
+}
+/*Secondary content - home */
+#secondary-content {
+  margin-bottom: 10px;
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 3vw;
+  text-align: center;
+  /*stat leaders section */
+  /*follow us section */
+}
+#secondary-content h2 {
+  padding-bottom: 15px;
+  padding-top: 20px;
+  font-weight: bold;
+}
+#secondary-content p {
+  font-size: 2vw;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding-top: 10px;
+  color: black;
+}
+#secondary-content a {
+  color: black;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  text-align: left;
+}
+#secondary-content #stat-leaders-table {
+  font-size: 25px;
+  display: inline-block;
+}
+#secondary-content table {
+  width: 300px;
+  border: black solid 2px;
+  margin-left: 0;
+  padding-bottom: 0;
+}
+#secondary-content th {
+  border: black solid 1px;
+}
+#secondary-content td {
+  border: black solid 1px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#secondary-content #stat-leaders-link {
+  padding-top: 17px;
+  padding-bottom: 3px;
+}
+#secondary-content .social-icons {
+  text-align: left;
+  padding-bottom: 110px;
+}
+#secondary-content .social-icons li {
+  display: inline-block;
+  font-size: 1.6vw;
+  list-style-type: none;
+  margin-top: 30px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+#secondary-content .social-icons li a {
+  border-bottom: none;
+}
+#secondary-content .social-icons li img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+/* navbar styling */
+.navbar {
+  background-color: #759bd6 !important;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif !important;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* home page background colors */
+.bgcolors-main {
+  background-color: #133160;
+  color: white;
+}
+.bgcolors-secondary {
+  background-color: #759bd6;
+}
+.footer-copyright {
+  background-color: #133160;
+  color: white;
+  margin-top: 10px;
+}
+/* article.html */
+#article-container {
+  background-color: #133160;
+  color: white;
+}
+#article-container h {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#article-container #article-content {
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+#article-container #article-photo img {
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+/*schedule.html*/
+#schedule h {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+}
+#schedule table {
+  margin-left: 30px;
+  text-align: center;
+  width: 1050px;
+  margin-bottom: 50px;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  border: white solid 2px;
+  background-color: #133160;
+  color: white;
+}
+#schedule table tr,
+#schedule table th,
+#schedule table td {
+  border: white solid 1px;
+}
+#schedule table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* coaches.html */
+#coaches-header h {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+#coaches-main-row {
+  background-color: #133160;
+  color: white;
+}
+#coaches-main-row #coaches-main-content-1,
+#coaches-main-row #coaches-main-content-2 {
+  padding-bottom: 40px;
+}
+#coaches-main-row #coaches-main-content-1 h,
+#coaches-main-row #coaches-main-content-2 h {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+#coaches-main-row p {
+  font-size: 20px;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  text-align: left;
+  padding-top: 20px;
+}
+#coaches-main-row img {
+  max-width: 100%;
+  padding-left: 10px;
+}
+/*accessories.html*/
+#accessories-main {
+  text-align: center;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+}
+#accessories-main #accessories-header {
+  background-color: #133160;
+  color: white;
+  padding-top: 20px;
+}
+#accessories-main #shop-item-1 p {
+  padding-bottom: 95px;
+}
+#accessories-main #shop-item-2 p {
+  padding-bottom: 20px;
+}
+#accessories-main #shop-item-3 p {
+  padding-bottom: 33px;
+}
+#accessories-main h {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  background-color: #133160;
+  color: white;
+}
+#accessories-main p {
+  background-color: #759bd6;
+  font-size: 2vw;
+  text-align: center;
+  padding-top: 10px;
+  color: black;
+}
+#accessories-main a {
+  color: black;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  text-align: left;
+}
+#accessories-main img {
+  max-width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*class to center images in columns */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*product page styling */
+#shop-item h2 {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+#shop-item p,
+#shop-item label,
+#shop-item #size,
+#shop-item #quantity {
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  padding-left: 10px;
+  font-size: 30px;
+}
+#shop-item label {
+  padding-right: 10px;
+}
+#shop-item button {
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: 40px;
+  margin-bottom: 87px;
+}
+/*clothing.html*/
+#clothing-main {
+  text-align: center;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+}
+#clothing-main #clothing-header {
+  background-color: #133160;
+  color: white;
+  padding-top: 20px;
+}
+#clothing-main #shop-item-2 p {
+  padding-bottom: 123px;
+}
+#clothing-main #shop-item-3 p {
+  padding-bottom: 97px;
+}
+#clothing-main h {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  background-color: #133160;
+  color: white;
+}
+#clothing-main p {
+  background-color: #759bd6;
+  font-size: 2vw;
+  text-align: center;
+  padding-top: 10px;
+  color: black;
+}
+#clothing-main a {
+  color: black;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  text-align: left;
+}
+#clothing-main .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clothing-main img {
+  max-width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+/*shop.html*/
+#shop-main {
+  text-align: center;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+}
+#shop-main #shop-header {
+  background-color: #133160;
+  color: white;
+  padding-top: 20px;
+}
+#shop-main #shop-item-2 p {
+  padding-bottom: 65px;
+}
+#shop-main #shop-item-3 p {
+  padding-bottom: 122px;
+}
+#shop-main h {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+#shop-main p {
+  background-color: #759bd6;
+  font-size: 2vw;
+  text-align: center;
+  padding-top: 10px;
+  color: black;
+}
+#shop-main a {
+  color: black;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-size: 1.5vw;
+  text-align: left;
+}
+#shop-main .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#shop-main img {
+  max-width: 80%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 750px) {
+  #logo {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  #header.col-sm-10 {
+    text-align: center;
+  }
+  #main-content {
+    margin-bottom: 50px;
+  }
+  #main-row {
+    margin-bottom: 40px;
+  }
+  #scores {
+    margin-bottom: 100px;
+  }
+  #secondary-content {
+    margin-top: 400px;
+  }
+  table {
+    display: block;
+  }
+  #about-content-area a {
+    font-size: 16px;
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  #checkout .col-25,
+  #checkout .col-75,
+  #checkout input {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+@media (max-width: 600px) {
+  .footer-copyright {
+    display: none;
+  }
+}
+/*checkout.html*/
+#checkout a {
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  color: #133160;
+}
+#checkout h2,
+#checkout h3 {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#checkout .row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+#checkout .col-25 {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+}
+#checkout .col-50 {
+  -ms-flex: 50%;
+  /* IE10 */
+  flex: 50%;
+}
+#checkout .col-75 {
+  -ms-flex: 75%;
+  /* IE10 */
+  flex: 75%;
+}
+#checkout .col-25,
+#checkout .col-50,
+#checkout .col-75 {
+  padding: 0 16px;
+}
+#checkout .container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+#checkout input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+#checkout label {
+  margin-bottom: 10px;
+  display: block;
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+}
+#checkout .icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+#checkout .btn {
+  background-color: #133160;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+@media (max-width: 800px) {
+  #checkout .row {
+    flex-direction: column-reverse;
+  }
+  #checkout .col-25 {
+    margin-bottom: 20px;
+  }
+}
+#checkout #shippingAddress {
+  display: none;
+}
+#checkout-confirmation {
+  background-color: #133160;
+  color: white;
+  padding-left: 20px;
+}
+#checkout-confirmation h2 {
+  font-family: 'Chivo', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  padding-top: 20px;
+}
+#checkout-confirmation p {
+  font-family: 'Hind Guntur', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding-bottom: 100px;
+}

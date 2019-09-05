@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>St. Louis Lyons Hockey - Winter Hat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <link href="home.css" rel="stylesheet">
+    <script src="productOrder.js"></script>
+</head>
+
+<body>
+    <!--Logo and header-->
+    <div class="container" id="top-row">
+        <div class="row">
+            <div class="col-sm-1" id="logo">
+                <img src="Images/LyonsLogo.png" style="max-width:100%;" alt="Lion on shield with hockey sticks">
+            </div>
+            <div class="col-sm-11" id="header">
+                <div class="page-header">
+                    <h1>St. Louis Lyons Hockey</h1>
+                </div>
+            </div>
+        </div>
+    
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Team</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="roster.html">Roster</a>
+                    <a class="dropdown-item" href="coaches.html">Coaches</a>
+                </div>    
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="schedule.html">Schedule</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="about.html">About Us</a>
+                    <a class="dropdown-item" href="contact.html">Contact Us</a>
+                </div>    
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop<span class="sr-only">(current)</span></a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item active" href="shop.html">Shop - Home</a>
+                    <a class="dropdown-item" href="clothing.html">Clothing</a>
+                    <a class="dropdown-item" href="accessories.html">Accessories</a>
+                </div>    
+            </li>    
+            </ul>
+        </div>
+    </nav>
+
+    <!--Item image and order options -->
+    <div class="container" id="shop-item">
+        <div class="row">
+            <div class="col-md-6" id="shop-item-img">
+                <div class="bgcolors-main">
+                    <div class="content">
+                        <img src="Images/Lyons Hat.jpg" style="max-width:80%;" alt="Blue and silver winter hat">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" id="shop-item-text">
+                <div class="bgcolors-main">
+                    <h2>Lyons Winter Hat</h2>
+                    <p>Price: $12.99</p>
+
+                    <br><br>
+                    <label for="quantity">Quantity:</label><select id="quantity" name="quantity">
+                        <option value="--" selected>--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <br><br>
+                    <form action="checkout.html">
+                            <button type="submit">Order Now</button>
+                    </form>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copyright text-center py-3">
+        St. Louis Lyons Hockey Copyright 2019
+    </div>
+
+</body>
+</html>

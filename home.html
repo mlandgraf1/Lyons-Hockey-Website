@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>St. Louis Lyons Hockey - Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Chivo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Guntur" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <link href="home.css" rel="stylesheet">
+    <script type="text/javascript" src="data.js"></script>
+</head>
+
+<body>
+    <!--Logo and header-->
+    <div class="container" id="top-row">
+        <div class="row">
+            <div class="col-sm-1" id="logo">
+                <img src="Images/LyonsLogo.png" alt="Lion on shield with hockey sticks">
+            </div>
+            <div class="col-sm-11" id="header">
+                <div class="page-header">
+                    <h>St. Louis Lyons Hockey</h>
+                </div>
+            </div>
+        </div>
+    
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Team</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="roster.html">Roster</a>
+                        <a class="dropdown-item" href="coaches.html">Coaches</a>
+                    </div>    
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="schedule.html">Schedule</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about.html">About Us</a>
+                        <a class="dropdown-item" href="contact.html">Contact Us</a>
+                    </div>    
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="shop.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="shop.html">Shop - Home</a>
+                        <a class="dropdown-item" href="clothing.html">Clothing</a>
+                        <a class="dropdown-item" href="accessories.html">Accessories</a>
+                    </div>    
+                </li>    
+              </ul>
+            </div>
+    </nav>
+
+    <!--Main content and Aside for scores-->
+    <div class="container" id="home-main-row">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8" id="main-content">
+                <div class="bgcolors-main">
+                    <img src="Images/Lyons Handshake Line.jpg" alt="Hockey team celebrating" style="max-width: 90%;">
+                    <h1 class="display-1">Lyons defeat Wasps <a href="article.html">Read more >>></a>  </h1>
+            </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4" id="scores">
+                <div class="bgcolors-main">
+                        <h1 class="display-3" style="font-size:5vw">Scores</h1>
+                            <h2>Last Game</h2>
+                            <p>3/17/19</p>
+                            <p>Ice Queens v. Lyons</p>
+                            <p>OTL 2 - 1 </p>
+                            <h2>Next Game</h2>
+                            <p>5/21/19</p>
+                            <p style="padding-bottom: 17px;">Lyons vs. Ice Queens</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script id="template" type="x-tmpl-mustache">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>G</th>
+                <th>A</th>
+                <th>P</th>
+            </tr>
+            {{#top5points}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{goals}}</td>
+                <td>{{assists}}</td>
+                <td>{{points}}</td>
+            </tr>
+            {{/top5points}}
+        </table>
+    </script>
+
+    <!--Three same sized sections for featured product, stat leaders, and follow us-->
+    <div class="container" id="secondary-content">
+        <div class="row" id="secondary-row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="bgcolors-secondary">
+                    <h2>Featured Product</h2>
+                    <img src="Images/Lyons Green TShirt.jpg" style="max-width:80%;" alt="Green and orange team shirt">
+                    <p>Irish-Themed Lyons Shirt<br> <a href="shop.html">Shop Now >>></a>  </p>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4" id="stat-leaders" style="overflow-x:auto;">
+                <div class="bgcolors-secondary">
+                    <h2>Stat Leaders</h2>
+                    <div id="stat-leaders-table">
+                        <div id="target"></div>
+                    </div>
+                    <div id="stat-leaders-link">
+                        <a href="roster.html">View Roster >>></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="bgcolors-secondary">
+                    <h2>Follow Us</h2>
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="Social Media Icons/PNG/Circle Color/Twitter.png"/></a>@StlLyonsHockey</li><br>
+                        <li><a href="#"><img src="Social Media Icons/PNG/Circle Color/Facebook.png"/></a>St. Louis Lyons Hockey</li><br>
+                        <li><a href="#"><img src="Social Media Icons/PNG/Circle Color/Instagram.png"/></a>@StlLyonsHockey</li><br>
+                        <li><a href="#"><img src="Social Media Icons/PNG/Circle Color/Snapchat.png"/></a>StlLyonsHockey</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center py-3">
+        St. Louis Lyons Hockey Copyright 2019
+    </div>
+
+</body>
+</html>
